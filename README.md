@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # P1 Sinatra Restful Crud 
  
 ##Learning Competencies 
@@ -42,3 +43,7 @@ Redo your application so that each CRUD route is triggered from an AJAX request.
 * [Sinatra Crud Tutorial ](http://net.tutsplus.com/tutorials/ruby/singing-with-sinatra/) 
 * [Rendering Partials in Sinatra](http://www.sinatrarb.com/faq.html#partials) 
 * [RESTful routes](http://guides.rubyonrails.org/routing.html)
+=======
+StackDaddy-s-Kitchen
+====================
+>>>>>>> 0161866c048d601071afd85ef3917fc46bd2265f
