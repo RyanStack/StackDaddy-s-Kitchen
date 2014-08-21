@@ -1,0 +1,48 @@
+
+
+
+<h1>StackDaddy's Kitchen</h1>
+
+
+<div id='design'>
+  <div id="chef">
+    <img src="http://www.blogography.com/photos29/ChefSouthPark.gif">
+  </div>
+
+  <div id="direct">
+    <button id="login_button" type="button">Login</button>
+    <button id="register_button" type="button">Register</button><br>
+    <div id ="content">
+    </div>
+  </div>
+</div>
+
+
+
+  <div id="login" style="display: none;">
+    <form action='/user_login' method='post'>
+      <!-- <button id="login_button" type="button">Login</button>
+      <button id="register_button" type="button">Register</button><br> -->
+      <input type='text' name='username' placeholder='username'><br>
+      <input type='text' name= 'password' placeholder='password'><br>
+      <input type='submit' value='Submit'>
+    </form>
+    <%if @error%>
+      <%=@error%>
+      <%end%>
+  </div>
+
+
+  <div id="register" style="display: none;">
+    <form action='/user_register' method='post'>
+      <!-- <button id="login_button" type="button">Login</button>
+      <button id="register_button" type="button">Register</button><br> -->
+      <input type='text' name='username' placeholder='username'><br>
+      <input type='text' name= 'password' placeholder='password'><br>
+      <input type='text' name='email' placeholder='email'><br>
+      <input type='submit' value='Submit'>
+    </form>
+  </div>
+
+
+
