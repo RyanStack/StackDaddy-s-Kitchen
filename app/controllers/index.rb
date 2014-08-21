@@ -1,34 +1,34 @@
 require 'json'
 require 'httparty'
 get '/' do
-  erb :login
-end
-
-post '/user_login' do
-  @username = params[:username]
-  @password = params[:password]
-  @current_user = User.where('user_name=? and password=?', @username, @password ).first
-  if @current_user != nil
-    session[:id] = User.find_by_user_name(@username).id
-    erb :kitchen
-  else
-    @error = "Wrong username and password"
-    erb :login
-  end
-
-end
-
-post '/user_register' do
-  username = params[:username]
-  password = params[:password]
-  email = params[:email]
-  User.create(user_name: username, password: password)
-  erb :login
-end
-
-get '/user_login' do
   erb :kitchen
 end
+
+# post '/user_login' do
+#   @username = params[:username]
+#   @password = params[:password]
+#   @current_user = User.where('user_name=? and password=?', @username, @password ).first
+#   if @current_user != nil
+#     session[:id] = User.find_by_user_name(@username).id
+#     erb :kitchen
+#   else
+#     @error = "Wrong username and password"
+#     erb :login
+#   end
+
+# end
+
+# post '/user_register' do
+#   username = params[:username]
+#   password = params[:password]
+#   email = params[:email]
+#   User.create(user_name: username, password: password)
+#   erb :login
+# end
+
+# get '/user_login' do
+#   erb :kitchen
+# end
 
 get '/recipe' do
   app_id = params[:app_id]
