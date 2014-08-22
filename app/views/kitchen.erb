@@ -1,5 +1,9 @@
 <header id ="header">
-    <a class="home" href="/"><div class="homecontainer">StackDaddy's Kitchen</div></a>
+    <a class="home" href="/"><div class="homecontainer"><h4>StackDaddy Kitchen</h4></div></a>
+    <div class="user_info">
+      <a href="/user_login">Sign In</a>
+      <a href="/register">Register</a>
+    </div>
 </header>
 
 <div class="container">
@@ -8,8 +12,11 @@
     <h2><b>Get Recipes!</b></h2>
     <h1><b>What's in your refrigerator?</b></h1>
     <form id='foodsearch' action='kitchen/search' method = 'post'>
+      <div class="prompt">
+        <p>Enter ingredients to get started:</p>
+      </div>
 
-      <input id='ingredients' type="text" name="ingredients" placeholder="Ingredients" required>
+      <input id='ingredients' type="text" name="ingredients" placeholder="ex. chicken beer" required>
       <input type="submit" id='api' value="Get Recipe!">
   </form>
 

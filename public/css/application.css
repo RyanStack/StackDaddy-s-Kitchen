@@ -66,12 +66,12 @@ h1 {
   background-color: black;
   border: black 1px solid;
   position: fixed;
+  border-top: none;
 }
 
 #foodsearch {
   text-align: left;
   padding-top: 23px;
-  margin-left: 10%;
 }
 
 .recipe {
@@ -114,7 +114,7 @@ a {
   font-size:150%;
   position: fixed !important;
   z-index: 1000;
-  margin-left: 15% !important;
+  margin-left: 11% !important;
 }
 
 .overlay {
@@ -139,4 +139,48 @@ a {
   width: 200px;
   background-color: #FF7518;
   height: 35px;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.homecontainer h4 {
+  margin-top: 0px;
+  padding-top: 6px;
+}
+
+#api {
+  border: 2px solid #ff7011;
+  border-radius: 4px;
+  background-color: #FF7518;
+  color: white;
+  box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.75);
+}
+
+#ingredients {
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.75);
+}
+
+.prompt {
+  display: inline-block;
+}
+
+.prompt p {
+  font-size: 13px;
+}
+
+.user_info {
+  display: inline-block;
+  float: right;
+  padding-right: 15px;
+  padding-top: 5px;
+}
+
+.user_info a {
+  color: #FF7518;
+
+  padding-top: 5px;
+  font-size: 12px;
+  margin: 5px;
 }
