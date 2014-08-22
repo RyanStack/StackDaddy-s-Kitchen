@@ -1,8 +1,22 @@
 .container {
-  margin: 20px auto;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  background: url(../images/food.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  padding-top: 75px;
+
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
 }
 
 th {
@@ -47,25 +61,31 @@ h1 {
 
 
 #header {
-  height: 50px;
+  height: 75px;
   width: 100%;
-  background-color: grey;
+  background-color: black;
+  border: black 1px solid;
+  position: fixed;
 }
 
 #foodsearch {
-  text-align: center;
-  padding-top: 10px;
+  text-align: left;
+  padding-top: 23px;
+  margin-left: 10%;
 }
 
 .recipe {
   height: 200px;
-  border: black 2px solid;
+  border: black 1px solid;
   background: gainsboro;
 }
 
 .food_image {
-  width: 30%;
-  height: 100%;
+  width: 25%;
+  height: 95%;
+  margin-top: 5px;
+  margin-left: 5px;
+  border: 1px solid black;
   display: inline-block;
 }
 
@@ -80,3 +100,31 @@ h1 {
   float: right;
 }
 
+a {
+  text-decoration: none !important;
+}
+
+/*html {
+    background-image: url(../images/food.jpg);
+    width: max-width;
+}*/
+.intro {
+  color: whitesmoke;
+  text-align: center;
+  font-size:150%;
+  position: fixed !important;
+  z-index: 1000;
+  margin-left: 20% !important;
+}
+
+.overlay {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7); /*can be anything, of course*/
+    margin-top: 75px;
+}

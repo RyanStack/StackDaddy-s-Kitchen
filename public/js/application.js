@@ -53,7 +53,7 @@ function buildInstructionPopUp(name, ingredients, yield, time, source) {
   // Creates an jQueryDOMElement from the todoTemplate.
   var $instruction = $(instructionTemplate);
   // Modifies it's text to use the passed in todoName.
-  $instruction.find('h2').text(name);
+  $instruction.find('h4').text(name);
   for (var i=0; i<ingredients.length; i++) {
     var li = $instruction.find('ul')
     var $li = $(li)
@@ -131,8 +131,8 @@ function buildRecipeRow(name, ingredients, picture, id) {
   var $recipe = $(recipeTemplate);
   // Modifies it's text to use the passed in todoName.
   $recipe.find('img').attr("src", picture)
-  $recipe.find('h2').text(name);
-  $recipe.find('h3').text(ingredients)
+  $recipe.find('h4').text(name);
+  $recipe.find('h5').text(ingredients)
   $recipe.find('.link').data("foodlink", id)
   // Returns the jQueryDOMElement to be used elsewhere.
   return $recipe;

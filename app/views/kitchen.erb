@@ -1,43 +1,65 @@
 <header id ="header">
-  <form id='foodsearch' action='kitchen/search' method = 'post'>
+  <!-- <form id='foodsearch' action='kitchen/search' method = 'post'>
+    <!-- <input id='apit' type='text' name='food' placeholder='Main Ingredient' required> -->
+   <!--  <input id='ingredients' type="text" name="ingredients" placeholder="Ingredients" required>
+    <input type="submit" id='api' value="Get Recipe!">
+  </form> --> -->
+</header>
+
+<div class="container">
+
+  <div class="intro">
+    <h2><b>Get Recipes!</b></h2>
+    <h1><b>What's in your refrigerator?</b></h1>
+    <form id='foodsearch' action='kitchen/search' method = 'post'>
     <!-- <input id='apit' type='text' name='food' placeholder='Main Ingredient' required> -->
     <input id='ingredients' type="text" name="ingredients" placeholder="Ingredients" required>
     <input type="submit" id='api' value="Get Recipe!">
   </form>
-</header>
+
+  </div>
+
+  <div class="recipes">
+  </div>
+
+  <div class="overlay">
+  </div>
 
 
-<div class="recipes">
+
+  <div class="popup">
+  </div>
+
 </div>
 
-<div class="popup">
-</div>
 
 
-
-<div id="recipe_template" style="display: none;">
+ <div id="recipe_template" style="display: none;">
     <div class="recipe">
       <div class="food_image">
         <img id="pic" src="">
       </div>
       <div class = "info">
-        <a class="link" data-foodlink="" href="/instructions"><h2>Todo Name</h2></a>
-        <h3>Ingredients</h3>
+        <a class="link" data-foodlink="" href="/instructions"><h4>Todo Name</h4></a>
+        <h5>Ingredients</h3>
       </div>
     </div>
-</div>
-
-<div id="instruction_template" style="display: none;">
-  <div class="instruction">
-    <button  id='exit' type="button">x</button>
-    <h2>Name</h2>
-    <h4>Ingredients</h4>
-    <ul>
-    </ul>
-    <p>Yield</p>
-    <p id="time">time</p>
-    <a href="source">Source Recipe</a>
   </div>
-</div>
+
+
+  <div id="instruction_template" style="display: none;">
+      <div class="instruction">
+        <button  id='exit' type="button">x</button>
+        <h4>Name</h4>
+        <h5>Ingredients</h5>
+        <ul>
+        </ul>
+        <p>Yield</p>
+        <p id="time">time</p>
+        <a href="source">Source Recipe</a>
+      </div>
+    </div>
+
+
 
 
