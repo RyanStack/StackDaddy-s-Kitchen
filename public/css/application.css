@@ -114,7 +114,7 @@ a {
   font-size:150%;
   position: fixed !important;
   z-index: 1000;
-  margin-left: 20% !important;
+  margin-left: 15% !important;
 }
 
 .overlay {
@@ -125,6 +125,18 @@ a {
     overflow: auto;
     top: 0px;
     left: 0px;
-    background: rgba(0, 0, 0, 0.7); /*can be anything, of course*/
+    background: rgba(0, 0, 0, 0.55); /*can be anything, of course*/
     margin-top: 75px;
+}
+
+.home {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.homecontainer {
+  width: 200px;
+  background-color: #FF7518;
+  height: 35px;
 }
